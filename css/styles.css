@@ -99,11 +99,12 @@ th {
 	border: 1px solid #bfbfbf;
 	font-size: 14px;
 	border-radius: 3px;
+	border-top: 1px dashed;
 }
 
 a{
 	text-decoration: none;
-	color: #646464;
+	color: #2c76c7;
 }
 
 #people-image{
@@ -135,3 +136,133 @@ a{
 	}
 
 }
+
+.plus{
+	margin-left: 10px;
+	margin-top: 5px;
+	position: relative;
+
+}
+
+.follow{
+	position:absolute;
+	margin-top: -18px;
+	width:70px;
+    height:15px;
+    background:#a4c574;
+	border-radius: 10px;
+    color:#ffffff;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+	position: absolute;
+	display: none;  
+}
+
+.plus:hover .follow{
+    display:block;
+}
+
+.checkmark{
+	float: left;
+	margin-left: -14px;
+	margin-top: 5px;
+	position: absolute;
+	display: none;
+
+}
+
+#followbut{
+	display: none;
+}
+#followbut:checked ~ .checkmark {
+  	display: block;
+}
+
+.column1-light{
+	float:left;
+	margin-left: 73px;
+	background: #ffffff;
+	width: 555px;
+	height: 60px;
+	border-left: 1px solid #bfbfbf;
+}
+.column2-light{
+	float:left;
+	margin-left: 0px;
+ 	background: #ffffff;
+	width: 135px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+}
+.column3-light{
+	float:left;
+	background: #ffffff;
+	width: 235px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+}
+.column4-light{
+	float:left;
+	background: #ffffff;
+	width: 238px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 23px;
+	border-right: 1px solid #bfbfbf;
+}
+
+.column1-dark{
+	float:left;
+	margin-left: 73px;
+	background: #fbfbfb;
+	width: 555px;
+	height: 60px;
+	border-left: 1px solid #bfbfbf;
+}
+
+.column2-dark{
+	float:left;
+	margin-left: 0px;
+ 	background: #fbfbfb;
+	width: 135px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+}
+
+.column3-dark{
+	float:left;
+	background: #fbfbfb;
+	width: 235px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+}
+
+.column4-dark{
+	float:left;
+	background: #fbfbfb;
+	width: 238px;
+	height: 40px;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 23px;
+	border-right: 1px solid #bfbfbf;
+}
+
+.more-lines{
+	display: none;
+}
+
+#show{
+	display: none;
+}
+
+#show:checked ~ .more-lines{
+	display: block;
+}
+

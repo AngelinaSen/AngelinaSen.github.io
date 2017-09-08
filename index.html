@@ -14,8 +14,9 @@
   <table>
   	<caption>
   		<div id="people-image"><img  src="images/people.gif" alt="people"></div> 
-  		<div id="people-text">PEOPLE</caption></div>
-  		<tr class= "cap">
+  		<div id="people-text">PEOPLE</div> 
+    </caption>
+  		<tr>
   			<th></th>
 			<th>Ideas</th>
 			<th>Following</th>
@@ -24,12 +25,21 @@
   		<tr class="dark">
   			<td>
   				<div class="photo"> <img  src="images/person1.gif" alt="photo"></div>
+          <input type="checkbox" id="followbut"/>
   				<div class="text">
   				<div>
-  					<div class="name"> John Adams </div>
-  					<div class = "plus">
-  						<img  src="images/plus.gif" alt="plus">
+  					<div class="name"> <a href="index.html">John Adams</a> </div>
+            
+  					<div class = "plus" >
+  						<img   src="images/plus.gif" alt="plus">
+              <label for="followbut"><div class="follow">Follow </div></label>
   					</div>
+
+            <div class = "checkmark">
+              <img   src="images/checkmark.jpg" alt="checkmark">
+            </div>
+
+            
   				</div>
   				<div>
   					<div class="graph">
@@ -49,7 +59,7 @@
   				<div class="photo"> <img  src="images/person2.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> Kevin Malcolm</div>
+  					<div class="name"> <a href="index.html">Kevin Malcolm</a></div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -71,7 +81,7 @@
   				<div class="photo"> <img  src="images/person3.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> James Madison </div>
+  					<div class="name"> <a href="index.html">James Madison </a></div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -94,7 +104,7 @@
   				<div class="photo"> <img  src="images/person4.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> James Monroe </div>
+  					<div class="name"> <a href="index.html">James Monroe </a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -118,7 +128,7 @@
   				<div class="photo"> <img  src="images/nophoto.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> Andrew Jackson </div>
+  					<div class="name"> <a href="index.html"> Andrew Jackson </a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -144,7 +154,7 @@
   				<div class="photo"> <img  src="images/person1.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> John Adams </div>
+  					<div class="name"> <a href="index.html">John Adams</a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -167,7 +177,7 @@
   				<div class="photo"> <img  src="images/person2.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> Kevin Malcolm </div>
+  					<div class="name"> <a href="index.html">Kevin Malcolm</a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -190,7 +200,7 @@
   				<div class="photo"> <img  src="images/person3.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> James Madison </div>
+  					<div class="name">  <a href="index.html">James Madison </a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -213,13 +223,16 @@
 
   		<tr class="dark">
    			<td>
+
   				<div class="photo"> <img  src="images/person4.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> James Monroe </div>
+  					<div class="name">  <a href="index.html">James Monroe </a> </div>
+
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
+            
   				</div>
   				<div>
   					<div class="graph">
@@ -241,7 +254,7 @@
   				<div class="photo"> <img  src="images/nophoto.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> Andrew Jackson </div>
+  					<div class="name"> <a href="index.html"> Andrew Jackson </a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -266,7 +279,7 @@
   				<div class="photo"> <img  src="images/person1.gif" alt="photo"></div>
   				<div class="text">
   				<div>
-  					<div class="name"> John Adams </div>
+  					<div class="name"> <a href="index.html">John Adams</a> </div>
   					<div class = "plus">
   						<img  src="images/plus.gif" alt="plus">
   					</div>
@@ -286,7 +299,157 @@
   </table>
   </div>
   <div id="footer">
-  	<div id="button"> <a href="people.html">SHOW MORE</a></div>
-  </footer>
+  	<label for="show"><div id="button"> SHOW MORE</div></label>
   </div>
+  <input type="checkbox" id="show">
+
+
+  <div class="more-lines">
+    <div class="column1-light">
+          <div class="photo"> <img  src="images/person2.gif" alt="photo"></div>
+          <div class="text">
+          <div>
+            <div class="name"> <a href="index.html">Kevin Malcolm</a> </div>
+            <div class = "plus">
+              <img  src="images/plus.gif" alt="plus">
+            </div>
+          </div>
+          <div>
+            <div class="graph">
+              <img  src="images/graph.gif" alt="graph">
+            </div>
+            <div class = "count"> 1472 </div>            
+          </div>
+          </div>
+    </div>
+    <div class="column2-light">
+      20
+    </div>
+    <div class="column3-light">
+      19
+    </div>
+    <div class="column4-light">
+      26
+    </div>
+  </div>
+
+  <div class="more-lines">
+    <div class="column1-dark">
+          <div class="photo"> <img  src="images/person4.gif" alt="photo"></div>
+          <div class="text">
+          <div>
+            <div class="name"> <a href="index.html">James Monroe </a> </div>
+            <div class = "plus">
+              <img  src="images/plus.gif" alt="plus">
+            </div>
+          </div>
+          <div>
+            <div class="graph">
+              <img  src="images/graph.gif" alt="graph">
+            </div>
+            <div class = "count"> 3086 </div>            
+          </div>
+          </div>
+    </div>
+    <div class="column2-dark">
+      53
+    </div>
+    <div class="column3-dark">
+      1059
+    </div>
+    <div class="column4-dark">
+      45
+    </div>
+  </div>
+
+    <div class="more-lines">
+    <div class="column1-light">
+          <div class="photo"> <img  src="images/nophoto.gif" alt="photo"></div>
+          <div class="text">
+          <div>
+            <div class="name"> <a href="index.html"> Andrew Jackson </a> </div>
+            <div class = "plus">
+              <img  src="images/plus.gif" alt="plus">
+            </div>
+          </div>
+          <div>
+            <div class="graph">
+              <img  src="images/graph.gif" alt="graph">
+            </div>
+            <div class = "count"> 102 </div>            
+          </div>
+          </div>
+    </div>
+    <div class="column2-light">
+      0
+    </div>
+    <div class="column3-light">
+      50
+    </div>
+    <div class="column4-light">
+      0
+    </div>
+  </div>
+
+    <div class="more-lines">
+    <div class="column1-dark">
+          <div class="photo"> <img  src="images/person1.gif" alt="photo"></div>
+          <div class="text">
+          <div>
+            <div class="name"> <a href="index.html">John Adams</a> </div>
+            <div class = "plus">
+              <img  src="images/plus.gif" alt="plus">
+            </div>
+          </div>
+          <div>
+            <div class="graph">
+              <img  src="images/graph.gif" alt="graph">
+            </div>
+            <div class = "count"> 102 </div>            
+          </div>
+          </div>
+    </div>
+    <div class="column2-dark">
+      0
+    </div>
+    <div class="column3-dark">
+      50
+    </div>
+    <div class="column4-dark">
+      0
+    </div>
+  </div>
+
+  <div class="more-lines">
+    <div class="column1-light">
+          <div class="photo"> <img  src="images/person2.gif" alt="photo"></div>
+          <div class="text">
+          <div>
+            <div class="name"> <a href="index.html">Kevin Malcolm</a> </div>
+            <div class = "plus">
+              <img  src="images/plus.gif" alt="plus">
+            </div>
+          </div>
+          <div>
+            <div class="graph">
+              <img  src="images/graph.gif" alt="graph">
+            </div>
+            <div class = "count"> 1472 </div>            
+          </div>
+          </div>
+    </div>
+    <div class="column2-light">
+      20
+    </div>
+    <div class="column3-light">
+      19
+    </div>
+    <div class="column4-light">
+      26
+    </div>
+  </div>
+
+
+
+  </body>
 </html>
